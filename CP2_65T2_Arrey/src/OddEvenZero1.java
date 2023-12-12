@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+
+public class OddEvenZero1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int A = scan.nextInt();
+        int[] arr = new int[A];
+        for(int i=0; i<A; i++){
+            int N = scan.nextInt();
+            arr[i] = N;
+        }
+        for(int i=0; i<A; i++){
+            if(arr[i]%2!=0 || arr[i]==0){
+                System.out.printf("%d ",arr[i]);
+            }
+        }
+        System.out.println("");
+        for(int i=0; i<A; i++){
+            if(arr[i]%2==0 || arr[i]==0){
+                System.out.printf("%d ",arr[i]);
+            }
+        }
+    }
+}
